@@ -98,7 +98,12 @@ function buttonClickFunction(){
     var result2 = document.getElementById('secondgrade');
     var grade1 = calculateFunction(result1.value) /2;
     var grade2 = calculateFunction(result2.value) /2;
+    console.log("Grade1: " + grade1);
+    console.log("Grade2: " + grade2);
+    
     var tempGrade = grade1 + grade2;
+    console.log("calculated: " + tempGrade);
     finalGrade(tempGrade);
+    //finalGrade(calculateFunction(document.getElementById('firstgrade').value)+calculateFunction(document.getElementById('secondgrade').value)/2);
 }
 document.addEventListener('DOMContentLoaded', LoadFunction);
